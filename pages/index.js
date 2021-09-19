@@ -2,7 +2,10 @@ import TimeLine from '../components/timeline/index'
 
 export default function Home(props) {
   return (
-    <div className="page-container">
+    <div className="page-container p-5">
+      <div className="d-flex justify-content-center text-center pb-5">
+        <h1 className="w-100">EXPLORAÇÃO ESPACIAL QUAL SUA RELAÇÃO COM A TECNOLOGIA?</h1>
+      </div>
       {
         props.periods.map((period) => (
           <TimeLine key="item.moderna" title={period.title} status={period.status} items={period.items}></TimeLine>

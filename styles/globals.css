@@ -2,6 +2,7 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #f4f4f4
 }
 
 a {
@@ -26,25 +27,44 @@ a {
 }
 
 .page-container {
-  background: #f4f4f4
+  background: #f4f4f4;
+
 }
 
 .period-container {
-  /*border: 1px solid #e5e5e5;*/
   min-width: 100%;
-  box-shadow: 0 0 0.1em #000;
+}
+
+.period-header {
+  cursor:pointer;
+}
+
+.title-tracking:hover {
+  opacity:0.5
+}
+
+.shadow-initial {
+  border: 2px solid #919F89;
+}
+
+.shadow-intermediary {
+  border: 2px solid #CDDAD8;
+}
+
+.shadow-actual {
+  border: 2px solid #98A7AC;
 }
 
 .tracking-status-initial {
-  background-color: #03fce8
+  background-color: #919F89;
 }
 
 .tracking-status-intermediary {
-  background-color: #03a1fc
+  background-color: #CDDAD8;
 }
 
 .tracking-status-actual {
-  background-color: #0307fc;
+  background-color: #98A7AC;
 }
 
 .tracking-item {
@@ -82,7 +102,7 @@ a {
   text-align: center;
   border-radius: 50%;
   font-size: 1.1rem;
-  background-color: #fff;
+  background-color: #e5e5e5;
   color: #fff
 }
 

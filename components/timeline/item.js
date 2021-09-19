@@ -32,14 +32,17 @@ export default function TimelineItem(props) {
         <div className="tracking-item">
             <div className="tracking-icon status-intransit" onClick={toggleIsPlaying}>
                 {!isPlaying ? <FontAwesomeIcon icon={faPlay} /> : <FontAwesomeIcon icon={faPause} />}
-
             </div>
-            <div className="tracking-content">{props.title}</div>
+            <div className="tracking-content ">
+                <p className="text-uppercase">
+                    {props.title}
+                </p>
+            </div>
             <audio
                 src={props.mp3}
                 autoPlay={true}
                 ref={audioRef}
-                style={{"display": "none"}}
+                style={{ "display": "none" }}
                 onPlay={() => setPlayingState(true)}
                 onPause={() => setPlayingState(false)}
             />

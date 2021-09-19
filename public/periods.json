@@ -2,8 +2,8 @@
 	"periods": [
 		{
 			"id": "primeiras_exploracoes",
-			"title": "Exploração espacial início/corrida espacial",
-			"status": "tracking-status-initial",
+			"title": "O início da corrida espacial",
+			"status": "initial",
 			"items": [
 				{
 					"id": "introducao_inicio_exploracoes",
@@ -22,42 +22,67 @@
 				},
 				{
 					"id": "contexto_inicio_exploracoes_pt3",
-					"title":"Como iniciou a exploração espacial?",
+					"title": "Como iniciou a exploração espacial?",
 					"mp3": "mp3/contexto_inicio_exploracoes_pt3.mp3"
 				},
 				{
 					"id": "contexto_inicio_exploracoes_pt4",
-					"title": "Contexto pt.4 ",
+					"title": "Qual país saiu na frente? Qual o primeiro satélite lançado?",
 					"mp3": "mp3/contexto_inicio_exploracoes_pt4.mp3"
 				},
 				{
 					"id": "conclusao_inicio_exploracoes_pt1",
-					"title": "Conclusão pt.1 ",
+					"title": "Conclusão pt.1",
 					"mp3": "mp3/conclusao_inicio_exploracoes_pt1.mp3"
 				},
 				{
 					"id": "conclusao_inicio_exploracoes_pt2",
-					"title": "Conclusão pt.2 ",
-					"mp3": "mp3/conclusao_inicio_exporacoes_pt2.mp3"
-				}	
+					"title": "Conclusão pt.2",
+					"mp3": "mp3/conclusao_inicio_exploracoes_pt2.mp3"
+				},
+				{
+					"id": "conclusao_inicio_exploracoes_pt3",
+					"title": "Conclusão pt.3",
+					"mp3": "mp3/conclusao_inicio_exploracoes_pt3.mp3"
+				},
+				{
+					"id": "conclusao_inicio_exploracoes_pt4",
+					"title": "Conclusão pt.4",
+					"mp3": "mp3/conclusao_inicio_exploracoes_pt4.mp3"
+				},
+				{
+					"id": "beneficios_inicio_exploracoes",
+					"title": "Benefícios da exploração espacial",
+					"mp3": "mp3/beneficios_inicio_exploracoes.mp3"
+				}
 			]
 		},
 		{
 			"id": "intermediario",
-			"title": "O Período intermediário entre o início das explorações e os dias atuais",
-			"status": "tracking-status-intermediary",
+			"title": "O período intermediário e os dias atuais",
+			"status": "intermediary",
 			"items": [
 				{
 					"id": "introducao_inicio_exploracoes",
-					"title": "Introdução",
-					"mp3": "mp3/introducao_inicio_exploracoes.mp3"
+					"title": "Missões apolo e Criação do ônibus espacial",
+					"mp3": "mp3/periodo_intermediario_pt1.mp3"
+				},
+				{
+					"id": "introducao_inicio_exploracoes",
+					"title": "Construção de outras espaçonaves e militarização do espaço. ",
+					"mp3": "mp3/periodo_intermediario_pt2.mp3"
+				},
+				{
+					"id": "introducao_inicio_exploracoes",
+					"title": "Construção do telescópio Hubble",
+					"mp3": "mp3/periodo_intermediario_pt3.mp3"
 				}
 			]
 		},
 		{
 			"id": "moderna",
 			"title": "Tecnologia computacional e exploração espacial moderna",
-			"status": "tracking-status-actual",
+			"status": "actual",
 			"items": [
 				{
 					"id": "intro-moderna",
@@ -68,12 +93,12 @@
 					"id": "tecnologias-modernas",
 					"title": "Tecnologias da computação espacial atuais",
 					"mp3": "mp3/tecnologia_moderna.mp3"
-				}, 
+				},
 				{
 					"id": "missoes-atuais",
 					"title": "Missões espaciais atuais:",
 					"mp3": "mp3/missoes_atuais.mp3"
-				}, 
+				},
 				{
 					"id": "conclusao",
 					"title": "Conclusão e futuras possibilidades",
