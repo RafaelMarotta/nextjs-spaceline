@@ -1,0 +1,85 @@
+{
+	"periods": [
+		{
+			"id": "primeiras_exploracoes",
+			"title": "Exploração espacial início/corrida espacial",
+			"status": "tracking-status-initial",
+			"items": [
+				{
+					"id": "introducao_inicio_exploracoes",
+					"title": "Introdução",
+					"mp3": "mp3/introducao_inicio_exploracoes.mp3"
+				},
+				{
+					"id": "contexto_inicio_exploracoes_pt1",
+					"title": "O que estava acontecendo nessa época? ",
+					"mp3": "mp3/contexto_inicio_exploracoes_pt1.mp3"
+				},
+				{
+					"id": "contexto_inicio_exploracoes_pt2",
+					"title": "União Soviética vs Estados Unidos",
+					"mp3": "mp3/contexto_inicio_exploracoes_pt2.mp3"
+				},
+				{
+					"id": "contexto_inicio_exploracoes_pt3",
+					"title":"Como iniciou a exploração espacial?",
+					"mp3": "mp3/contexto_inicio_exploracoes_pt3.mp3"
+				},
+				{
+					"id": "contexto_inicio_exploracoes_pt4",
+					"title": "Contexto pt.4 ",
+					"mp3": "mp3/contexto_inicio_exploracoes_pt4.mp3"
+				},
+				{
+					"id": "conclusao_inicio_exploracoes_pt1",
+					"title": "Conclusão pt.1 ",
+					"mp3": "mp3/conclusao_inicio_exploracoes_pt1.mp3"
+				},
+				{
+					"id": "conclusao_inicio_exploracoes_pt2",
+					"title": "Conclusão pt.2 ",
+					"mp3": "mp3/conclusao_inicio_exporacoes_pt2.mp3"
+				}	
+			]
+		},
+		{
+			"id": "intermediario",
+			"title": "O Período intermediário entre o início das explorações e os dias atuais",
+			"status": "tracking-status-intermediary",
+			"items": [
+				{
+					"id": "introducao_inicio_exploracoes",
+					"title": "Introdução",
+					"mp3": "mp3/introducao_inicio_exploracoes.mp3"
+				}
+			]
+		},
+		{
+			"id": "moderna",
+			"title": "Tecnologia computacional e exploração espacial moderna",
+			"status": "tracking-status-actual",
+			"items": [
+				{
+					"id": "intro-moderna",
+					"title": "Introdução",
+					"mp3": "mp3/intro_moderna.mp3"
+				},
+				{
+					"id": "tecnologias-modernas",
+					"title": "Tecnologias da computação espacial atuais",
+					"mp3": "mp3/tecnologia_moderna.mp3"
+				}, 
+				{
+					"id": "missoes-atuais",
+					"title": "Missões espaciais atuais:",
+					"mp3": "mp3/missoes_atuais.mp3"
+				}, 
+				{
+					"id": "conclusao",
+					"title": "Conclusão e futuras possibilidades",
+					"mp3": "mp3/conclusao_moderna.mp3"
+				}
+			]
+		}
+	]
+}

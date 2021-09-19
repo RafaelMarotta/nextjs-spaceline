@@ -1,10 +1,28 @@
 import TimeLine from '../components/timeline/index'
 
-export default function Home() {
+export default function Home(props) {
   return (
-      <div>
-        <TimeLine title="Primeiras explorações espaciais" items={[{"title": "exemplo", "mp3": "intro_moderna.mp3"}, {"title": "exemplo2", "mp3": "intro_moderna.mp3"}]}></TimeLine>
-        <TimeLine title="Primeiras explorações espaciais" items={[{"title": "exemplo", "mp3": "intro_moderna.mp3"}, {"title": "exemplo2", "mp3": "intro_moderna.mp3"}]}></TimeLine>
-      </div>
+    <div className="page-container">
+      {
+        props.periods.map((period) => (
+          <TimeLine key="item.moderna" title={period.title} status={period.status} items={period.items}></TimeLine>
+        ))
+      }
+    </div>
   )
+}
+
+export async function getStaticProps(context) {
+  const data = await import('../public/periods.json')
+  if (!data) {
+    return {
+      notFound: true,
+    }
+  }
+
+  const periods = data.periods
+
+  return {
+    props: { periods }, // will be passed to the page component as props
+  }
 }

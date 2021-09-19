@@ -13,10 +13,6 @@ a {
   box-sizing: border-box;
 }
 
-.tracking-detail {
-  padding: 3rem 0
-}
-
 [class*=tracking-status-] p {
   margin: 0;
   font-size: 1.1rem;
@@ -29,12 +25,26 @@ a {
   padding: 1.6rem 0
 }
 
-.tracking-status-intransit {
-  background-color: #65aee0
+.page-container {
+  background: #f4f4f4
 }
 
-.tracking-list {
-  border: 1px solid #e5e5e5
+.period-container {
+  /*border: 1px solid #e5e5e5;*/
+  min-width: 100%;
+  box-shadow: 0 0 0.1em #000;
+}
+
+.tracking-status-initial {
+  background-color: #03fce8
+}
+
+.tracking-status-intermediary {
+  background-color: #03a1fc
+}
+
+.tracking-status-actual {
+  background-color: #0307fc;
 }
 
 .tracking-item {
@@ -42,6 +52,7 @@ a {
   position: relative;
   padding: 2rem 1.5rem .5rem 2.5rem;
   font-size: .9rem;
+  cursor: pointer;
   margin-left: 3rem;
   min-height: 5rem
 }
@@ -85,6 +96,11 @@ a {
   .tracking-item {
     margin-left: 3rem
   }
+
+  .period-container {
+    min-width: 75%!important;
+  }
+
   .tracking-item .tracking-content {
     padding: 0;
     padding-top: 0.5rem;
