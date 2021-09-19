@@ -6,21 +6,26 @@ export default function TimelineItem(props) {
     const audioRef = useRef(null)
 
     const [isPlaying, setIsPlaying] = useState(false)
+    const [hasFinished, setHasFinished] = useState(false)
 
     function setPlayingState(state) {
         setIsPlaying(state)
     }
 
+    function setVisualizedState(state) {
+        setHasFinished(state)
+    }
+
     function toggleIsPlaying() {
         setIsPlaying(!isPlaying)
     }
-
+    
     useEffect(() => {
         if (!audioRef.current) {
             return;
         }
-
         if (isPlaying) {
+            setHasFinished(false)
             audioRef.current.play()
         } else {
             audioRef.current.pause()
@@ -30,7 +35,7 @@ export default function TimelineItem(props) {
 
     return (
         <div className="tracking-item">
-            <div className="tracking-icon status-intransit" onClick={toggleIsPlaying}>
+            <div className="tracking-icon status-intransit"  style={hasFinished ? {"color": "#0000ff"} : {"color": "#000"}} onClick={toggleIsPlaying}>
                 {!isPlaying ? <FontAwesomeIcon icon={faPlay} /> : <FontAwesomeIcon icon={faPause} />}
             </div>
             <div className="tracking-content ">
@@ -45,6 +50,7 @@ export default function TimelineItem(props) {
                 style={{ "display": "none" }}
                 onPlay={() => setPlayingState(true)}
                 onPause={() => setPlayingState(false)}
+                onEnded={() => setVisualizedState(true)}
             />
         </div>
     )
